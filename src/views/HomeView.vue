@@ -376,6 +376,9 @@ onUnmounted(() => {
   background: var(--color-primary);
   opacity: 0.18;
   filter: blur(22px);
+  -webkit-filter: blur(22px);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   pointer-events: none;
 }
 
