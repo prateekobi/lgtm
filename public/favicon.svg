@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>PO</title>
+  <rect width="32" height="32" rx="6" fill="oklch(0.18 0 0)"/>
+  <path fill-rule="evenodd" d="M7 5h16v15h-10v7h-6V5z M13 10h5v6h-5z" fill="oklch(0.70 0.18 55)"/>
+</svg>
