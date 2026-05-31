@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg:      oklch(0.18 0.000 0);   /* charcoal ~#2a2a2a */
+  --color-surface: oklch(0.23 0.000 0);   /* card hover surface */
+  --color-ink:     oklch(0.95 0.000 0);   /* primary text */
+  --color-muted:   oklch(0.72 0.000 0);   /* secondary text — bumped for charcoal contrast */
+  --color-dim:     oklch(0.62 0.000 0);   /* tertiary text — 4.5:1 on charcoal */
+  --color-primary: oklch(0.70 0.180 55);  /* amber accent */
+  --color-border:  oklch(0.30 0.000 0);   /* visible on charcoal */
+
+  --font-sans:    'Barlow', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
