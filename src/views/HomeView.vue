@@ -386,6 +386,7 @@ onUnmounted(() => {
   width: 110px;
   height: 110px;
   border-radius: 50%;
+  clip-path: circle(50%);
   object-fit: cover;
   box-shadow: 0 0 0 1.5px oklch(0.70 0.180 55 / 0.25);
 }
